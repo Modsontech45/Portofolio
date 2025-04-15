@@ -1,6 +1,6 @@
-/*===== GOOGLE FONTS =====*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+
 :root {
   --header-height: 3rem;
   --font-semi: 600;
@@ -31,7 +31,7 @@
   }
 }
 
-/*===== BASE =====*/
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -60,6 +60,7 @@ ul {
 
 a {
   text-decoration: none;
+
 }
 
 img {
@@ -68,7 +69,7 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -94,7 +95,7 @@ img {
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -110,9 +111,10 @@ img {
   z-index: var(--z-fixed);
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+
 }
 
-/*===== NAV =====*/
+
 .nav {
   height: var(--header-height);
   display: flex;
@@ -136,10 +138,11 @@ img {
 }
 .nav__item {
   margin-bottom: var(--mb-4);
+
 }
 .nav__link {
   position: relative;
-  color: #fff;
+  color: #fdf8f8;
 }
 .nav__link:hover {
   position: relative;
@@ -154,7 +157,7 @@ img {
   background-color: var(--first-color);
 }
 .nav__logo {
-  color: var(--second-color);
+  color: black;
 }
 .nav__toggle {
   color: var(--second-color);
@@ -162,7 +165,7 @@ img {
   cursor: pointer;
 }
 
-/*Active menu*/
+
 .active-link::after {
   position: absolute;
   content: "";
@@ -173,12 +176,11 @@ img {
   background-color: var(--first-color);
 }
 
-/*=== Show menu ===*/
 .show {
   right: 0;
 }
 
-/*===== HOME =====*/
+
 .home {
   position: relative;
   row-gap: 5rem;
@@ -220,7 +222,7 @@ img {
   width: 360px;
 }
 
-/*BUTTONS*/
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -234,7 +236,7 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== ABOUT =====*/
+
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -250,7 +252,6 @@ img {
   border-radius: 0.5rem;
 }
 
-/* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
   text-align: center;
@@ -321,7 +322,7 @@ img {
 .skills__postgresql {
   width: 70%;
 }
-/* ===== WORK =====*/
+
 .work__container {
   row-gap: 2rem;
 }
@@ -337,7 +338,7 @@ img {
   transform: scale(1.1);
 }
 
-/* ===== CONTACT =====*/
+
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -347,7 +348,8 @@ img {
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
-  background-color: rgb(58, 57, 56);
+  background-color: rgb(17, 14, 14);
+  color: #fff;
 }
 .contact__button {
   display: block;
@@ -358,9 +360,9 @@ img {
   margin-left: auto;
 }
 
-/* ===== FOOTER =====*/
+
 .footer {
-  background-color: var(--second-color);
+  background-color: rgb(17, 14, 14);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -382,7 +384,7 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/* ===== MEDIA QUERIES=====*/
+
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
